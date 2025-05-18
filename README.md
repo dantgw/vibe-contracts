@@ -1,6 +1,6 @@
 # Vibe
 
-A modern web application built on the Sui blockchain that enables users to create, manage, and interact with various types of content through smart contracts. The application leverages Enoki for authentication and sponsored transactions, providing a seamless user experience.
+A modern web application built on the Sui blockchain that enables users to create, manage, and interact with various types of content through smart contracts.
 
 ## Features
 
@@ -20,16 +20,6 @@ A modern web application built on the Sui blockchain that enables users to creat
 - Walrus for storage of video and thumbnails
 - SEAL for encryption and decryption of video content
 - Walrus Blob Extension
-
-## Tech Stack
-
-- **Frontend**: Next.js 14, React 18, TypeScript
-- **Styling**: Tailwind CSS, Radix UI components
-- **Blockchain**: Sui blockchain, Mysten Labs tooling
-- **Authentication**: Enoki zkLogin, Google OAuth
-- **State Management**: React Query, Context API
-- **UI/UX**: Framer Motion, Sonner (toasts), Lucide icons
-- **Development**: ESLint, Prettier, TypeScript
 
 ## Smart Contract Architecture
 
@@ -107,67 +97,7 @@ The contract emits various events for tracking:
 - Google Cloud Platform account (for OAuth)
 - Enoki account (for authentication and sponsored transactions)
 
-## Getting Started
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/sui-overflow.git
-   cd sui-overflow
-   ```
-
-2. Install dependencies:
-   ```bash
-   yarn install
-   ```
-
-3. Set up environment variables:
-   - Copy `.env.template` to `.env`
-   - Copy `.env.local.template` to `.env.local`
-   - Fill in the required environment variables:
-     ```
-     # Enoki Configuration
-     NEXT_PUBLIC_ENOKI_API_KEY=your_public_key
-     ENOKI_SECRET_KEY=your_private_key
-     
-     # Google OAuth
-     NEXT_PUBLIC_GOOGLE_CLIENT_ID=your_google_client_id
-     
-     # Sui Configuration
-     PACKAGE_ID=your_deployed_package_id
-     ```
-
-4. Start the development server:
-   ```bash
-   yarn dev
-   ```
-
-5. Open [http://localhost:3000](http://localhost:3000) in your browser
-
-## Project Structure
-
-```
-sui-overflow/
-├── app/                    # Next.js app directory
-│   ├── api/               # API routes
-│   ├── auth/              # Authentication pages
-│   ├── create/            # Content creation pages
-│   ├── profile/           # User profile pages
-│   └── upload/            # File upload functionality
-├── components/            # Reusable React components
-├── contexts/             # React context providers
-├── hooks/                # Custom React hooks
-├── lib/                  # Utility functions and libraries
-├── move/                 # Sui Move smart contracts
-├── public/               # Static assets
-└── types/                # TypeScript type definitions
-```
-
-## Development
-
-- `yarn dev` - Start development server
-- `yarn build` - Build for production
-- `yarn start` - Start production server
-- `yarn lint` - Run ESLint
 
 ## Acknowledgments
 
