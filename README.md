@@ -2,10 +2,13 @@
 
 A modern web application built on the Sui blockchain that enables users to create, manage, and interact with various types of content through smart contracts.
 
+## Published
+Testnet: 0x4896b80cfe182f958c1dddaf6d526281263ab4930b3c994397d08709715becd8
+
 ## Features
 
 - 🔐 **Authentication**: Secure login using Google OAuth through Enoki's zkLogin
-- 💰 **Sponsored Transactions**: Gas-free transactions for users through Enoki
+- 💰 **Sponsored Transactions**: Gas-free transactions for users through Enoki 
 - 📝 **Content Management**: Create and manage video posts
 - 🔒 **Encryption**: Support for encrypted content creation
 - 📤 **File Upload**: Upload and manage files on the blockchain
